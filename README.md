@@ -10,6 +10,10 @@ This is based on the [official community installation guide](http://dev.lightnin
 
 ## How do I run it? 
 
+You can pull from [this Docker repo](https://hub.docker.com/r/samjhill/lnd-docker/)
+
+OR run manually:
+
 First, clone this repo. Then, from inside the newly-cloned folder:
 
 1) `docker build -t lnd .` 
