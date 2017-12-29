@@ -8,7 +8,9 @@ This is based on the [official community installation guide](http://dev.lightnin
 
 [Docker](https://docs.docker.com/engine/installation/)
 
-## How do I run it? First, clone this repo. Then, from inside the newly-cloned folder:
+## How do I run it? 
+
+First, clone this repo. Then, from inside the newly-cloned folder:
 
 1) `docker build -t lnd .` 
 
