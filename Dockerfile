@@ -15,4 +15,5 @@ RUN git clone https://github.com/roasbeef/btcd $GOPATH/src/github.com/roasbeef/b
 
 RUN cd $GOPATH/src/github.com/roasbeef/btcd && glide install && go install . ./cmd/...
 
-CMD	["btcd","--testnet","--txindex","--rpcuser=kek","--rpcpass=kek"]
+# CMD	["btcd","--testnet","--txindex","--rpcuser=kek","--rpcpass=kek"]
+CMD ["lnd", "--noencryptwallet", "--no-macaroons", "--bitcoin.active", "--bitcoin.testnet", "--debuglevel=info", "--bitcoin.node=neutrino", "--neutrino.connect=faucet.lightning.community"]
