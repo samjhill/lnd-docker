@@ -10,6 +10,9 @@ WORKDIR $GOPATH/src/github.com/lightningnetwork/lnd
 RUN glide install
 RUN go install . ./cmd/...
 
+# RUN mkdir /root/.lnd
+COPY .lnd /root/.lnd
+
 COPY "start-lnd.sh" .
 RUN chmod +x start-lnd.sh
 
